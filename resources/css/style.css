@@ -19,6 +19,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 0px;
     padding: 10px;
     padding-left: 15px;
     width: 25%;
@@ -55,32 +56,36 @@ h2 {
   color: white;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h6 {
   border: 1px solid black;
 }
 
 .main.container {
+  justify-content: flex-start;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
   padding-top: 116px;
 }
 
 .column.large {
   width: 630px;
-  border: 1px solid black;
+  display: block;
+
 }
 
 .column.medium {
   width: 300px;
-  border: 1px solid black;
   margin-left: 10px;
 }
 
 .column.small {
   width: 240px;
-  border: 1px solid black;
   margin-left: 10px;
+  flex-direction: column;
 }
 
 .phishpic {
@@ -93,34 +98,55 @@ h6 {
   width: 100%;
 }
 
+.phishpictext {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin-left: 20px;
+}
+
 .phish {
-  border: 1px solid black;
+  display: flex;
+}
+
+.inarow {
+  margin-top: 16px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
 }
 
 .orca {
-  border: 1px solid black;
-}
-
-.earth {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("../images/img-story-2.png");
-  background-repeat: repeat;
-  height: 300px;
+  width: 300px;
 }
 
 .burger {
-  border: 1px solid black;
+  width: 300px;
 }
 
-.camera {
+.earth {
+  margin-top: 15px;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/img-story-2.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../images/img-story-3.png");
-  background-repeat: repeat;
   height: 300px;
+  width: 300px;
+}
+
+.camera {
+  margin-top: 15px;
+  text-align: center;
+  background-image: url("../images/img-story-3.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
 }
 
 .cats {
@@ -134,5 +160,24 @@ h6 {
 }
 
 .newsbites {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.news {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.newslist {
+  display: block;
+  padding: 11 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
 }
